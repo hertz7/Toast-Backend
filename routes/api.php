@@ -30,5 +30,5 @@ Route::get('event/guest/:id', 'App\Http\Api\Controllers\EventController@getEvent
 Route::get('faq/guest', 'Api\FaqController@getGuestFaq');
 Route::get('faq/host', 'Api\FaqController@getHostFaqs');
 
-Route::post('user/signup','Auth\RegisterController@register');
-Route::post('user/login', 'Auth\LoginController@login');
+Route::post('user/signup','Api\RegisterController@register');
+Route::post('user/login', 'Api\LoginController@login');
