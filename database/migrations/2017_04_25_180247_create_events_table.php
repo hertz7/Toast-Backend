@@ -22,6 +22,7 @@ class CreateEventsTable extends Migration
             $table->integer('images');
             $table->string('description');
             $table->string('special_note')->nullable();
+            $table->string('meal_description')->nullable();
             $table->boolean('hasActivity');
             $table->decimal('latitude', 9, 6);
             $table->decimal('longitude', 9, 6);

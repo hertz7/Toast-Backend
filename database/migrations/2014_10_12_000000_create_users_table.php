@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->boolean('is_host')->default(false);
             $table->boolean('is_social')->default(false);
             $table->boolean('is_active')->default(false);
+            $table->string('description')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
